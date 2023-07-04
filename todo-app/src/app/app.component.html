@@ -9,19 +9,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/79be424806.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
     <div class="todo">
-        <div class="header">
-            <h1>ToDo List</h1>
-            <input type="text" class="todo-input" placeholder="Write your todo list here...">
-            <button class="btn-add">Add</button>
-        </div>
+        <app-header />
+
         <div class="todolist">
             <h3>List of Works Todo:</h3>
             <p class="error-info"></p>
-            <ul>
+
+            <app-todo-list />
+
+            <!-- <ul>
                 <li data-id='test1'>Shopping
                     <div class="tools">
                         <button class="complete"><i class="fas fa-check"></i></button>
@@ -43,17 +44,7 @@
                         <button class="delete"><i class="fas fa-times"></i></button>
                     </div>
                 </li>
-            </ul>
-        </div>
-    </div>
-    
-    <div class="popup">
-        <h3>Edit your todo:</h3>
-        <div class="popup-body">
-            <p class="popup-info"></p>
-            <input type="text" class="popup-input" placeholder="Wprowadź nową treść zadania...">
-            <button class="popup-btn accept">Update</button>
-            <button class="popup-btn cancel">Cancel</button>
+            </ul> -->
         </div>
     </div>
 </body>

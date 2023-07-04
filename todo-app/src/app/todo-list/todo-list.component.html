@@ -1,0 +1,17 @@
+
+<ul>
+    <li class="todo-list-item" *ngFor="let item of list" attr.id="{{item.id}}">
+        <span [ngClass]="{'marked': item.completed}">{{item.title}}</span>
+        
+        <div class="tools">
+            <button (click)="markAsCompleted(item.id)" class="complete">
+                <i class="fas fa-check"></i>
+            </button>
+            <button (click)="showEdit(item.id)" class="edit">EDIT</button>
+            <button (click)="deleteTodo(item.id)" class="delete"><i class="fas fa-times"></i></button>
+        </div>
+
+        <app-popup *ngIf="populShow" />
+    </li>
+
+</ul>
